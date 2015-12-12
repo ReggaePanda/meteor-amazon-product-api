@@ -1,6 +1,6 @@
 Package.describe({
   name: 'quackware:amazon-product-api',
-  version: '0.0.1',
+  version: '0.0.2',
   // Brief, one-line summary of the package.
   summary: 'Meteor smart package for amazon product api',
   // URL to the Git repository containing the source code for this package.
@@ -16,6 +16,8 @@ Npm.depends({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.2.1');
+
+  api.use('underscore');
 
   api.export("AmazonProductApi");
 
